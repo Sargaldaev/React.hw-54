@@ -6,7 +6,7 @@ export interface IItem {
 const getArray = () => {
   const arr: IItem[] = [];
 
-  for (let i = 0; i < 36; i++) {
+  for (let i:number = 0; i < 36; i++) {
     arr.push( { hasItem: false, clicked: false } );
   }
 

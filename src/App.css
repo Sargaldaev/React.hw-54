@@ -3,7 +3,56 @@
   margin: 5% auto;
   border: 3px dashed #000;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+
+.counterAndBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 10px;
+}
+
+.counterAndBtn button {
+  width: 100px;
+  height: 30px;
+
+  border-radius: 10px;
+  cursor: pointer;
+  transition: scale .25s linear;
+}
+
+.counterAndBtn button:hover {
+  scale: 1.25;
+  transition: scale .25s linear;
+}
+
+.win {
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  left: 38.5%;
+  animation: scaling 4s linear infinite;
+}
+
+@keyframes scaling {
+  0% {
+    scale: 1;
+  }
+  25% {
+    scale: 1.25;
+  }
+  50% {
+    scale: 1.5;
+  }
+  75% {
+    scale: 1.25;
+  }
+  100% {
+    scale: 1;
+  }
 }
